@@ -16,6 +16,36 @@ call vundle#end()            " required
 colorscheme gruvbox
 set bg=dark
 filetype plugin indent on    " required
+
 " numeros relativos
 set rnu
+
+" No swap files
+set noswapfile
+
+" Remap de teclas
+" Remap de esc 
+inoremap ii <Esc>
+" remap leader 
+:let mapleader = ","
+" Remap Salida forzada vim (,q)
+noremap <leader>q :q!<Enter>
+" Remap Salida guardando vim (,wq)
+noremap <leader>wq :wq<Enter>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
