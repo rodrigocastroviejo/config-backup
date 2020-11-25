@@ -1,3 +1,10 @@
+" Como instalar: ir
+" al repositorio de vundle en github e instalarlo, o, copiar
+" esto en terminal -> git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+"Despues, ejecutar esto en terminal -> vim +PluginInstall +qall
+
+
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -32,20 +39,3 @@ inoremap ii <Esc>
 noremap <leader>q :q!<Enter>
 " Remap Salida guardando vim (,wq)
 noremap <leader>wq :wq<Enter>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
