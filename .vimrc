@@ -13,10 +13,13 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-"Autocompletacion python
-Plugin 'davidhalter/jedi-vim'
 "color scheme
 Plugin 'morhetz/gruvbox'
+"c.vim agiliza la cracion de codigo en c
+"Manual resumido de utilizacion de c.vim -> https://www.thegeekstuff.com/2009/01/tutorial-make-vim-as-your-cc-ide-using-cvim-plugin/
+Plugin 'c.vim'
+"bash support es un IDE para vim para facilitar la creacion de scripts en bash
+Plugin 'WolfgangMehner/bash-support'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 " Las siguientes 2 lineas son la config colorcheme
@@ -24,11 +27,15 @@ colorscheme gruvbox
 set bg=dark
 filetype plugin indent on    " required
 
-" numeros relativos
-set rnu
 
+" numeros relativos
+set number relativenumber
+   
 " No swap files
 set noswapfile
+
+"Resaltar la sintaxis
+syntax on
 
 " Remap de teclas
 " Remap de esc 
